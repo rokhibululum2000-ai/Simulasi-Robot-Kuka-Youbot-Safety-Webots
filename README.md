@@ -93,20 +93,24 @@ flowchart LR
 - **Safety bekerja.** Di video demo robot berhenti dan lanjut otomatis beberapa kali, misalnya sekitar detik 1,8 sampai 3,2 (saat awal), detik 35 sampai 43 (saat memutar sambil membawa kardus), dan detik 61 sampai 63 (saat menaruh).
 - **Verifikasi capit:** jari menutup ke **0.0091** saat memegang kardus dan **0.0080** saat kosong. Selisihnya hanya sekitar 1 mm, jadi ambang ditetapkan di antaranya (**0.0085**). Console mencetak `AMBIL: capit=0.0091 -> MEMEGANG_BARANG`.
 
-## 🧗 Kendala dan pelajaran
+## 🧗 Pembelajaran Dan Evaluasi Teknis
 
 - **Koordinat.** Menentukan titik berhenti robot di depan meja dan conveyor memakai GPS sampai posisi capit pas.
 - **Tinggi objek.** Menyesuaikan tinggi meja dan kardus dengan jangkauan lengan robot, termasuk pose lengan saat turun dan angkat.
 - **Lebar gripper.** Menyesuaikan bukaan capit dan ambang sensor dengan ukuran kardus. Ambang awal yang saya hitung dari lebar kardus ternyata salah karena asumsi geometri gripper tidak cocok dengan model di simulasi. Saya koreksi dengan **mengukur bacaan capit dengan dan tanpa kardus**.
-- **Kamera dan Pedestrian.** Mengatur `translation` dan `rotation` kamera dan Pedestrian supaya gerakan terlihat jelas, dan menyetel ambang deteksi supaya robot tidak berhenti terlalu sering.
+- **Kamera dan Pedestrian.** Mengatur `translation` dan `rotation` kamera dan Pedestrian supaya gerakan terlihat jelas, dan menyetel ambang deteksi supaya robot tidak berhenti terlalu sering,serta menyeting kecepatan pedestrian  yang sesuai(tidak terlambat ataupun terlalu cepat.jika terlambat maka sensor kamera gagal mendeteksi objek yg lewat.
 - **Kebiasaan menguji.** Mengubah satu hal per percobaan dan mencatat hasilnya. Cara kerja ini saya bawa dari pengalaman di quality control.
 
-## ⚠️ Keterbatasan
+## ⚠️ Tantangan Teknis Dan Solusinya
 
 - Semua hasil berasal dari simulasi, bukan robot fisik.
 - Deteksi "orang" masih berbasis warna hijau, bukan pengenalan manusia yang sebenarnya.
 - Keberhasilan pengambilan dinilai dari sensor capit, bukan dari verifikasi posisi kardus di conveyor.
 - Kardus yang ditaruh di conveyor ikut terbawa bergerak ke pinggir, sehingga lama-lama keluar dari pandangan kamera.
+- ukuran kardus didesain  kecil karena menyesuaikan maksimal untuk pembukaan gripper/capit  gripper yg bisa dibuka maksimal 0.025       Solusinya,program saya setting 0.024 agar memberikan ruang gerak yang aman mencegah kondisi seret saat menutup kembali.
+- Akurasi Skala Realistis : ukuran robot dipertahankan sesuai standar Bawaan Webots agar mempresentasikan dimensi kuka youbot asli      Didunia nyata.Solusinya Sudut Pandang Kamera sengaja diatur agak Jauh Agar seluruh pergerakan objek terpantau.
+- belum dilakukan penggujian beban berat maksimal yg bisa diangkat oleh robot, karena seringkali batasan berat beban simulasi dan       dunia nyata pasti berbeda beda tergantung pada jenis pekerjaannya.
+- Skala Karakter Manusia(Optimasi Sensor Warna): Tinggi Karakter Manusia Sengaja Diatur Melebihi Robot Agar sensor Kamera Berbasis      warna Mendapatkan Cakupan Warna piksel yg cukup.Solusinya  Agar terdeteksi Oleh Sistem Keselamatan Robot.
 
 ## 🚀 Cara menjalankan
 
