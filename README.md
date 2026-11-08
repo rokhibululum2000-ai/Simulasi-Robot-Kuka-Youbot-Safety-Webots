@@ -123,9 +123,9 @@ flowchart LR
 
 ```
 ├── controllers/youbot_otomatis/youbot_otomatis.py   # program utama robot
-├── worlds/<nama-world>.wbt                           # dunia simulasi
-├── data/log_robot.csv, ringkasan_siklus.csv          # contoh hasil log
-├── demo-thumbnail.jpg                                # gambar sampul video
+├── worlds/<nama-world>.wbt                          # dunia simulasi
+├── data/ringkasan_siklus.csv                        # ringkasan hasil tiap run
+├── demo-thumbnail.jpg                               # gambar sampul video
 └── README.md
 ```
 
