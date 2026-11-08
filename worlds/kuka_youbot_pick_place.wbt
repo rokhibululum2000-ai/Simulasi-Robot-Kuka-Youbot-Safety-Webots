@@ -1,0 +1,140 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/tables/protos/Table.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/conveyors/protos/ConveyorBelt.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/CardboardBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/kuka/youbot/protos/Youbot.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/RoughConcrete.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/humans/pedestrian/protos/Pedestrian.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.15969593290838813 0.08362979797521905 0.9836174387957667 1.3414041897048208
+  position -1.4605457374201436 -7.567869864199272 2.3463230666707076
+}
+Pedestrian {
+  hidden translation_2 -0.11757877963571318 -7.216449660063518e-16 0.03307069689796366
+  hidden rotation_2 0 1 0 0.6535272727272712
+  hidden translation_3 -0.03852391181288 0 0.008477516031142107
+  hidden rotation_3 0 -1 0 0.40323636363636395
+  hidden translation_4 0.054308879431449505 0 -0.009238411059742824
+  hidden rotation_4 0 1 0 0.14836363636363475
+  hidden translation_5 0.117698392313719 0 0.04895702569609675
+  hidden rotation_5 0 -1 0 0.6831999999999984
+  hidden translation_6 -0.014448103500365642 0 0.005116247745965891
+  hidden rotation_6 0 -1 0 0.15578181818181708
+  hidden translation_7 0.011444642499267244 0 -0.0012617524813638425
+  hidden rotation_7 0 0.9999999999999999 0 0.030981818181822468
+  hidden translation_8 -0.193342281934934 0 -0.03906678139610603
+  hidden rotation_8 0 -1 0 0.6638545454545446
+  hidden translation_9 0.41181723167481343 3.608224830031759e-16 -0.14088972404328437
+  hidden rotation_9 0 1 0 0.580363636363639
+  hidden translation_10 -0.31069482744200605 0 -0.017018479046761348
+  hidden rotation_10 0 -1 0 0.26705454545454277
+  hidden translation_11 0.04575533466657478 3.608224830031759e-16 -0.009748346126633889
+  hidden rotation_11 0 0.9999999999999999 0 0.15472727272726533
+  hidden translation_12 0.3955499287626545 0 -0.12959754273155
+  hidden rotation_12 0 1 0 0.5543272727272804
+  hidden translation_13 -0.039485728841998156 -3.608224830031759e-16 0.002446466149407911
+  hidden rotation_13 0 -1 0 0.03385454545454627
+  hidden translation_14 -0.041743929869445355 0 0.0034995692749236196
+  hidden rotation_14 0 1 0 0.11323636363636266
+  translation -0.4 -0.8 1.27
+  rotation 0 0 1 -1.5707963267948966
+  controllerArgs [
+    "--speed=0.4"
+    "--trajectory=-0.4  -0.3,  -0.4  3.5"
+  ]
+  shirtColor 0 1 0
+  pantsColor 0 1 0
+  rightLegAngle 0.15472727272726627
+  rightLowerLegAngle 0.5543272727272804
+  rightFootAngle -0.03385454545454451
+  leftLegAngle -0.6638545454545446
+  leftLowerLegAngle 0.5803636363636387
+  leftFootAngle -0.267054545454543
+  rightArmAngle -0.6831999999999985
+  rightLowerArmAngle -0.15578181818181674
+  rightHandAngle 0.03098181818181899
+  leftArmAngle 0.6535272727272715
+  leftLowerArmAngle -0.4032363636363643
+  leftHandAngle 0.148363636363635
+  headAngle 0.11323636363636425
+}
+Robot {
+  translation -0.9 -8.5 2
+  rotation 0 -1 0 0.261799
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Table {
+  translation 0 0 -0.02
+  size 0.5 1.6 0.12
+}
+ConveyorBelt {
+  hidden translation_1 -8.763137084866202e-07 6.118332696036788e-08 0.08995097334575039
+  hidden rotation_1 0.05644099927598156 0.9984032854281691 0.002300705754026005 9.126014113153807e-07
+  hidden linearVelocity_1 -1.7005748530962706e-07 1.6758058708532532e-07 3.424015372957001e-07
+  hidden angularVelocity_1 -1.5639630610639536e-08 -1.655629687552655e-07 7.111640767562043e-08
+  translation -0.88 0.7 0
+  size 1 0.4 0.12
+}
+CardboardBox {
+  translation -0.2 -0.02 0.12
+  size 0.04 0.04 0.04
+  mass 0.1
+}
+RectangleArena {
+  floorSize 3 4
+  floorAppearance RoughConcrete {
+  }
+}
+Youbot {
+  hidden position_0_0 168.6155146501506
+  hidden position_0_1 -98.71310277526314
+  hidden position_0_2 168.61644793963976
+  hidden position_0_3 -98.71383791865307
+  hidden position_4_0 7.4934626424888584e-06
+  hidden rotation_5 0 0 0.9999999999999999 7.493491579387209e-06
+  hidden position_5_0 -0.22000419833828766
+  hidden rotation_6 0 1 0 0.22000419833828688
+  hidden position_6_0 -0.9800109298664421
+  hidden rotation_7 0 1 0 0.980010929866442
+  hidden position_7_0 -1.530000330055129
+  hidden rotation_8 0 1 0 1.530000330055129
+  hidden position_8_0 1.1026396509899673e-07
+  hidden rotation_9 0 0 1 1.1151007970493858e-07
+  hidden position_9_0 0.02400000001947834
+  hidden position_9_1 0.02399999998094347
+  hidden translation_10 0 0.02400000001947834 0.09
+  hidden translation_11 0 -0.02399999998094347 0.09
+  hidden rotation_12 0 0.9999999999999999 0 5.252696663481352
+  hidden rotation_13 0 0.9999999999999999 0 1.8178621396102452
+  hidden rotation_14 0 1 0 5.253629952970507
+  hidden rotation_15 0 0.9999999999999999 0 1.8171269962203138
+  translation -0.9 -0.02 0.1
+  name "youbot"
+  controller "youbot_otomatis"
+  bodySlot [
+    InertialUnit {
+    }
+    DEF CCTV_PABRIK Camera {
+      translation 0 0 0.25
+      rotation 0 1 0 0.2
+      name "CCTV_PABRIK"
+      fieldOfView 1
+      width 640
+      height 480
+    }
+    Pose {
+    }
+    GPS {
+    }
+  ]
+}
